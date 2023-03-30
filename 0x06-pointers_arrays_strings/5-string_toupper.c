@@ -1,26 +1,23 @@
-#include "holberton.h"
-
-/**
-  * string_toupper - Changes all lowercase letters to uppercase
-  *
-  * @p: The string will be modified
-  *
-  * Return: char var
-  */
-
-char *string_toupper(char *x)
-{
-	int length;
-
-	length = 0;
-
-	while (x[length] != '\0')
-	{
-		if (x[length] >= 97 && x[length] <= 122)
-		{
-			x[length] = x[length] - 32;
-		}
-		length++;
-	}
-	return (x);
+#include "main.h"                                                                                                                    
+                                                                                                                                     
+/**                                                                                                                                  
+ * string_toupper - Changes all lowercase letters                                                                                    
+ *                  of a string to uppercase.                                                                                        
+ * @str: The string to be changed.                                                                                                   
+ *                                                                                                                                   
+ * Return: A pointer to the changed string.                                                                                          
+ */                                                                                                                                  
+char *string_toupper(char *str)                                                                                                      
+{                                                                                                                                    
+        int index = 0;                                                                                                               
+                                                                                                                                     
+        while (str[index])                                                                                                           
+        {                                                                                                                            
+                if (str[index] >= 'a' && str[index] <= 'z')                                                                          
+                        str[index] -= 32;                                                                                            
+                                                                                                                                     
+                index++;                                                                                                             
+        }                                                                                                                            
+                                                                                                                                     
+        return (str);                                                                                                                
 }
