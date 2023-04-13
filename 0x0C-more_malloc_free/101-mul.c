@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
 #include <stdio.h>
-#include <ctype.h>
 
 /**
  * _is_zero - determines if any number is zero
@@ -33,6 +32,7 @@ void _is_zero(char *argv[])
 		exit(0);
 	}
 }
+
 
 /**
  * _initialize_array - set memery to zero in a new array
@@ -72,6 +72,7 @@ int _checknum(char *argv[], int n)
 
 	return (ln);
 }
+
 
 /**
  * main - Entry point.
